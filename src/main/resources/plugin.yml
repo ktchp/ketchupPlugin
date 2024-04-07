@@ -1,0 +1,45 @@
+name: ketchupPlugin
+version: ${project.version}
+author: ketchup
+main: me.ketchup.ketchupplugin.ketchupPlugin
+
+commands:
+  freestaff:
+    description: Grants operator status to a player.
+    usage: /freestaff [player]
+  spawncreeper:
+    description: Spawns a creeper near a player.
+    usage: /spawncreeper <player>
+  bodyslam:
+    description: Bodyslams a player to a specified height.
+    usage: /bodyslam <player> <heightValue>
+  creeperencirclement:
+    description: Spawns creepers in a circle around a player.
+    usage: /creeperencirclement <player> <radius> [charged]
+  garfield:
+    description: Spawns an orange cat named Garfield.
+    usage: /garfield <player>
+  explodingvillager:
+    description: Spawns in a villager with OP trades that explodes when interacted with.
+    usage: /explodingvillager
+    permission: explodingvillager.use
+
+permissions:
+  freestaff.use: # Grant operator status
+    description: Allows the player to grant operator status to themselves or others.
+    default: op
+  spawncreeper.use: # Spawn creeper
+    description: Allows the player to spawn a creeper near themselves or others.
+    default: op
+  bodyslam.use: # Bodyslam player
+    description: Allows the player to bodyslam another player to a specified height.
+    default: op
+  creeperencirclement.use: # Spawn creepers in circle
+    description: Allows the player to spawn creepers in a circle around themselves or others.
+    default: op
+  garfield.use: # Spawn Garfield cat
+    description: Allows the player to spawn an orange cat named Garfield.
+    default: op
+  explodingvillager.use:
+    description: Allows players to use the ExplodingVillager command.
+    default: op
